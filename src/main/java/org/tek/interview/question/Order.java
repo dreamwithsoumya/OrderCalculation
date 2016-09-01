@@ -5,14 +5,13 @@ import java.util.List;
 
 public class Order {
 
-	private List<OrderLine> orderLines = new ArrayList<OrderLine>();
+	private List<OrderLine> orderLines = new ArrayList<OrderLine>();  // initialized list object, null pointer exception error
 
 	public void add(OrderLine o) throws Exception {
 		if (o == null) {
 			System.err.println("ERROR - Order is NULL");
 			throw new IllegalArgumentException("Order is NULL");
 		}
-		//orderLines = new ArrayList<OrderLine>();      // initialized list object, null pointer exception error
 		orderLines.add(o); 
 	}
 

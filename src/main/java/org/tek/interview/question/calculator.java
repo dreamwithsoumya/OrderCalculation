@@ -70,5 +70,8 @@ public class calculator {
 		}
 
 		System.out.println("Sum of orders: " + rounding(grandtotal) );
+	     
 	}
+	
+	
 }
